@@ -1,2 +1,1 @@
-# MemiBank
-Bank Sim
+This is my first Bash project.
