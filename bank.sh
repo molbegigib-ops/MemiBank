@@ -1,5 +1,10 @@
 #!/bin/bash
 balance=0
+accounts='/home/memin/MemiBank/Accounts.conf' # !!!!!!!!! CHANGE THIS TO YOUR FILE LOCATION !!!!!!!!!!!
+if [[ ! -e "$accounts" ]]; then
+    echo "Couldn't find save, please try again later."
+    exit
+fi
 clear
 preBankMenu="
                       -Create an account for MemiBank-
@@ -91,12 +96,6 @@ Balance: $balance
         esac
     done
 }
-
-accounts='/home/memin/MemiBank/Accounts.conf'
-if [[ ! -e "$accounts" ]]; then
-    echo "Couldn't find save, please try again later."
-    exit
-fi
 
 echo "$preBankMenu"
 read -r pressed
