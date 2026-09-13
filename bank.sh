@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 balance=0
 accounts='/home/memin/MemiBank/Accounts.conf' # !!!!!!!!! CHANGE THIS TO YOUR FILE LOCATION !!!!!!!!!!!
 if [[ ! -e "$accounts" ]]; then
